@@ -11,7 +11,7 @@ async function loadTasks() {
     return;
   }
 
-  const res = await fetch('https://backend-lm93.onrender.com/login.html', {
+  const res = await fetch('https://backend-lm93.onrender.com', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ token })
