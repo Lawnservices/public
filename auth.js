@@ -54,7 +54,7 @@
 //   window.location.href = "login.html";
 // }
 // URL de tu backend en Render
-const API = "https://backend-lm93.onrender.com";
+const API = "https://backend-lm93.onrender.com/register";
 
 // TOKEN GLOBAL
 let token = localStorage.getItem("token") || "";

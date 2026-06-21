@@ -15,5 +15,17 @@
     <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
 
     <script src="auth.js"></script>
+    <script>
+        fetch("https://backend-lm93.onrender.com/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    username,
+    password
+  })
+})
+    </script>
 </body>
 </html>

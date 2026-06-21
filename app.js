@@ -87,7 +87,7 @@ const taskList = document.getElementById('taskList');
 let tasks = [];
 
 // URL de tu backend en Render
-const API = "https://backend-lm93.onrender.com";
+const API = "https://backend-lm93.onrender.com/register";
 
 // CARGAR TAREAS
 async function loadTasks() {
