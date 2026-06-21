@@ -5,6 +5,7 @@
     <title>Login</title>
 </head>
 <body>
+
     <h1>Iniciar sesión</h1>
 
     <input type="text" id="user" placeholder="Usuario">
@@ -14,18 +15,8 @@
 
     <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
 
+    <!-- SOLO auth.js aquí -->
     <script src="auth.js"></script>
-    <script>
-        fetch("https://backend-lm93.onrender.com/login", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    username,
-    password
-  })
-})
-    </script>
+
 </body>
 </html>

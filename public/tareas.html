@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/tareas.css">
 </head>
 <body>
+
     <h1>Mis tareas</h1>
 
     <button onclick="logout()">Cerrar sesión</button>
@@ -20,24 +21,14 @@
     <script src="auth.js"></script>
     <script src="app.js"></script>
 
+    <!-- PROTECCIÓN DE SESIÓN -->
     <script>
-        // 🚨 Redirección automática si NO hay sesión
         const token = localStorage.getItem("token");
+
         if (!token) {
             window.location.href = "login.html";
         }
-
-
-        fetch("https://backend-lm93.onrender.com/tasks/save", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    token,
-    tasks
-  })
-})
     </script>
+
 </body>
 </html>
